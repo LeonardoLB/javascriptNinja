@@ -17,6 +17,10 @@ z = 1.2 // tipo float
 
 console.log(z)
 
-o = true // boolean
+o = true // tipo boolean
 
 console.log(o)
+
+n = null // tipo nulo
+
+console.log(n)
