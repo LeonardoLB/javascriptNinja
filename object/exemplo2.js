@@ -12,13 +12,18 @@ pessoa = {
     nome: 'leonardo',
     idade: 22,
     altura: 1.74,
+    sexo: 'm',
     peso: 90,
     andar: function() {
         return 'pessoa andando'
     },
     aniversario: function () {
         pessoa.idade += 1
+    },
+    mudarSexo: function() {
+        pessoa.sexo == 'm'? pessoa.sexo = 'f': pessoa.sexo = 'm'
     }
+
 }
 
 
@@ -32,3 +37,10 @@ console.log(pessoa.andar())
 console.log( pessoa.idade )
 pessoa.aniversario()
 console.log( pessoa.idade )
+
+
+console.log( pessoa.sexo )
+pessoa.mudarSexo()
+console.log(pessoa.sexo)
+pessoa.mudarSexo()
+console.log(pessoa.sexo)
