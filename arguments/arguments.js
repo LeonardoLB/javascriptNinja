@@ -1,9 +1,9 @@
 (function () {
 
-    function myfun(a) {
+    function myfun(a,b) {
         return arguments
     }
 
-    console.log( myfun(2) )
+    console.log( myfun(2,4) )
 
 })();
