@@ -18,3 +18,5 @@ for ( var prop in obj ) {
 }
 
 console.log( Object.keys(obj).forEach(prop => console.log(obj[prop])) )
+
+console.log( 'name' in obj )
