@@ -26,6 +26,13 @@ url = 'http://google.com.br'
 console.log( url.match( /https?:\/\/\w+\.com[.br]?/g ) )
 
 
-url = 'https://www.microsoft.com/pt-br/software-download/windows10ISO'
 
-console.log( url.match( /https?:\/\/(\w+)\.(\w+)\.com(:\d+)?(\/)?(\w+)?(\/)?/g ) )
+url = 'https://www.microsoft.com/pt-br/software-download/windows10ISO'
+url2 = 'https://www.gooogle.com.br:80/pt/videoplay?docid=67886647838476478=en#57f4839mh'
+url3 = 'http://cavicon.com.br/'
+url4 = 'https://engage.bz/platform/?competitionId=0#/competitions'
+
+console.log(url2.match( /https?:\/\/(\w+)\.(\w+)\.com(\.br)?(:\d+)?(\/)?(\w+)?(\/)?(\w+)?(\?)?(\w+[=])?(\w+\d+=)?(\w+[#]\w+)?/g ) )
+console.log(url.match( /https?:\/\/(\w+)\.(\w+)\.com(\.br)?(:\d+)?(\/)?(\w+-)?(\/)?(\w+)?(\?)?(\w+[=])?(\w+\d+=)?(\w+[#]\w+)?/g ) )
+console.log( url3.match( /https?:\/\/(\w+)\.(\w+)\.com(\.br)?(:\d+)?(\/)?(\w+-)?(\/)?(\w+)?(\?)?(\w+[=])?(\w+\d+=)?(\w+[#]\w+)?/g ) )
+console.log( url4.match( /https?:\/\/(\w+)\.(\w+)\.com(\.br)?(:\d+)?(\/)?(\w+-)?(\/)?(\w+)?(\?)?(\w+[=])?(\w+\d+=)?(\w+[#]\w+)?/g ) )
