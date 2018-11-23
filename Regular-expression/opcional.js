@@ -32,7 +32,39 @@ url2 = 'https://www.gooogle.com.br:80/pt/videoplay?docid=67886647838476478=en#57
 url3 = 'http://cavicon.com.br/'
 url4 = 'https://engage.bz/platform/?competitionId=0#/competitions'
 
+
 console.log(url2.match( /https?:\/\/(\w+)\.(\w+)\.com(\.br)?(:\d+)?(\/)?(\w+)?(\/)?(\w+)?(\?)?(\w+[=])?(\w+\d+=)?(\w+[#]\w+)?/g ) )
 console.log(url.match( /https?:\/\/(\w+)\.(\w+)\.com(\.br)?(:\d+)?(\/)?(\w+-)?(\/)?(\w+)?(\?)?(\w+[=])?(\w+\d+=)?(\w+[#]\w+)?/g ) )
 console.log( url3.match( /https?:\/\/(\w+)\.(\w+)\.com(\.br)?(:\d+)?(\/)?(\w+-)?(\/)?(\w+)?(\?)?(\w+[=])?(\w+\d+=)?(\w+[#]\w+)?/g ) )
 console.log( url4.match( /https?:\/\/(\w+)\.(\w+)\.com(\.br)?(:\d+)?(\/)?(\w+-)?(\/)?(\w+)?(\?)?(\w+[=])?(\w+\d+=)?(\w+[#]\w+)?/g ) )
+
+console.log( url.match( /https?:\/\/(w+)/ ) )
+
+
+query = '?s=lala&b=bebe&c=cece'
+
+console.log( query.replace( /[?&](\w+)=(\w+)/g, function (regex, key, value) {
+    console.log( regex )
+    console.log( key )
+    console.log( value )
+} ) )
+
+// se inicia com h
+console.log( url.match(/^h/) )
+
+
+// se acaba com tal string
+console.log( url.match( /O$/ ) )
+
+var cpf = '46.909.718-8'
+// quebrando numeros
+console.log( cpf.split( /\D/ ) )
+
+//busca pelo caracter
+console.log( cpf.search( /[\.-]/ ) )
+
+texto = 'leo 123 b'
+
+regex = new RegExp('\\d')
+
+console.log( regex.test(texto) )
