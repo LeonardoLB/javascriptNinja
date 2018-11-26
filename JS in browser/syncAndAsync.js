@@ -3,10 +3,10 @@
     'use strict'
 
 
-    // //modo Sincrono
-    // console.log( 'a 1' )
-    // console.log( 'a 2' )
-    // console.log( 'a 3' )
+    //modo Sincrono
+    console.log( 'a 1' )
+    console.log( 'a 2' )
+    console.log( 'a 3' )
 
 
 
