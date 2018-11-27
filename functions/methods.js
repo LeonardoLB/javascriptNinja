@@ -6,6 +6,9 @@
 
     }
 
+    //quando usa toString na função ela é mostrada literalmente
+    console.log( myFunc.toString() )
+
     //imprime a quantia de parametros ele aceita
     console.log( myFunc.length )
 
@@ -22,4 +25,7 @@
             prop3: '2'
         }
     }
+
+    console.log( obj.toString() )
+
 })()
