@@ -24,4 +24,18 @@
 
     console.log( leo.age )
 
+
+    function fun() {
+        Array.prototype.forEach.call( arguments, function (item, index) {
+            console.log( item )
+        });
+
+
+        Array.prototype.reduce.call( arguments, function (acumulated, item) {
+            console.log( acumulated + item )
+        })
+    }
+
+    fun( 1, 2, 3, 4, 5, 6, 7)
+
 })()
