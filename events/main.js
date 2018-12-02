@@ -9,13 +9,18 @@
 
     function listener(event, element, callback) {
         doc.querySelector(element)
-        .addEventListener( event, callback, false )
+            .addEventListener( event, callback, false )
 
+    }
+
+    function noListener(event, element, callback) {
+        doc.querySelector(element)
+            .removeEventListener( event, callback, false )
     }
 
     listener('click', '[data-js="link"]', message )
     listener('click', '[data-js="div"]', message )
-
+    noListener('click', '[data-js="link"]', message )
 
     function message() {
         alert('Foi realizado o clique')
