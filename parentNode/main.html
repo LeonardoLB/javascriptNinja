@@ -1,36 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Metodos DOM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script defer src="main.js"></script>
-    <title>ParentNode</title>
+    <style>
+        main{
+            display: flex;
+            color: white;
+        }
+        .lua, .sol{
+            border-radius: 90%;
+            width: 90px;
+            height: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .lua{
+            background-color: cornflowerblue;
+        }
+        .sol{
+            background-color:gold;
+        }
+    </style>
 </head>
 <body>
-
-    <header>
-        <h1>Essa pagina de teste</h1>
-    </header>
-
-    <section>
-        Lorem ipsum dolor sit amet.
-
-        <div class = "entry">
-
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Quo laboriosam necessitatibus, tempora nam amet nisi eius
-                harum doloremque ducimus vero rem debitis explicabo aliquid,
-                illum inventore rerum velit temporibus deleniti.
-            </p>
-
-        </div>
-    </section>
-
-    <footer class="footer">
-        <small>2018 leo</small>
-    </footer>
-
+    <main class = "main" data-type = 'pai'>
+        <div class = 'lua' data-type = 'lua'>Lua</div>
+        <div class = 'sol' data-type = 'sol'>Sol</div>
+    </main>
 </body>
 </html>
