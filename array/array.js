@@ -23,3 +23,17 @@ console.log( arr )
 console.log( arr[6] )
 console.log( arr[6][2] )
 
+// copiar um array usando map
+var array2 = numeros.map(function (item) {
+    return item
+})
+
+var array3 = Array.prototype.map.call( numeros , function (item) {
+    return item
+} )
+
+var array4 = numeros.slice(0)
+
+console.log( array2 )
+console.log( array3 )
+console.log( array4 )
