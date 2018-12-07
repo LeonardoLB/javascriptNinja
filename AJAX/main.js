@@ -6,8 +6,9 @@
 
     // abre a requisição com o tipo e o caminho do arquivo
     // aparece no network da pagina
-    ajax.open('get', '/')
-    ajax.open('get', 'main.js')
+    // ajax.open('get', '/')
+    // ajax.open('get', 'main.js')
+    ajax.open('get', 'data/data.json')
 
     //
     ajax.send()
@@ -20,6 +21,18 @@
     // ou
 
     ajax.addEventListener( 'readystatechange', function () {
+
+        if (isRequestOk()) {
+
+            var data = JSON.parse(ajax.response)
+
+            console.log( 'requisição ok' )
+            // console.log( 'conteudo: ' + ajax.responseText )
+            console.log( 'conteudo: ' + data.message )
+        }
+        else{
+            console.log( 'deu problema' )
+        }
 
         console.log( 'terminou requisição' )
         console.log( ajax.readyState )
@@ -34,5 +47,9 @@
     // 2: headers recebidos, cabeçalhos da conexão (oq esta sendo recebido, infos sobre arquivos)
     // 3: Carregando o conteudo/corpo do request
     // 4: concluido com sucesso, incluiu a requisição com sucesso
+
+    function isRequestOk() {
+        return ajax.readyState === 4 && ajax.status === 200 ? true : false
+    }
 
 })(window, document)
