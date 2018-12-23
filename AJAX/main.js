@@ -29,6 +29,14 @@
             console.log( 'requisição ok' )
             // console.log( 'conteudo: ' + ajax.responseText )
             console.log( 'conteudo: ' + data.message )
+            // disparando erro:
+            // throw new Error ('Mensagem de erro');
+            try {
+                throw new Error ('Deu erro')
+            } catch (error) {
+                console.log(error);
+            }
+
         }
         else{
             console.log( 'deu problema' )
