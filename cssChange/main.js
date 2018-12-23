@@ -7,7 +7,9 @@
 
     setInterval(() => {
         counter++
-        div.style = "width: 100px; height: 100px; background-color: #FF"+counter+"0"+counter+"F"
+        div.style = "height: 100px; background-color: #FF"+counter+"0"+counter+"F"
+        div.style.width = '100px'
     }, 2000);
+
 
 })()
